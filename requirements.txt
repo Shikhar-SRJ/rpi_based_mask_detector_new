@@ -1,0 +1,7 @@
+Flask==1.1.2
+Flask-BasicAuth==0.2.0
+imutils==0.5.3
+numpy==1.19.0
+opencv-python==4.2.0.34
+python-dotenv==0.14.0
+picamera[array]
