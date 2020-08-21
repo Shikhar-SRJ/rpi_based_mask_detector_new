@@ -116,6 +116,6 @@ Step 4. Accessing the application through browser by serarching "<ip address of 
 
 The model is already built and saved in "tf_lite" directory.
 
-The notebooks are also available in case someone wants to use a new dataset or increase the model accuracy.
+The [notebooks](https://github.com/Shikhar-SRJ/face_mask_detection_model.git) are also available in case someone wants to use a new dataset or increase the model accuracy.
 
-For dataset go to the link: https://drive.google.com/drive/folders/1e6cSXUrhGrYAv6FbLCFM627BPnFXYz4G?usp=sharing
+For dataset [click here](https://drive.google.com/drive/folders/1e6cSXUrhGrYAv6FbLCFM627BPnFXYz4G?usp=sharing)
