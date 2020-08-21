@@ -1,4 +1,4 @@
-# rpi_based_mask_detector_new
+# Raspberry_Pi_based_mask_detector
 
 ## Installing dependencies:
 
