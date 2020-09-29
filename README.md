@@ -1,5 +1,6 @@
 # Raspberry_Pi_based_mask_detector
 
+
 ## Installing dependencies:
 
 #### First of all, we need to install opencv for image processing and tflite_runtime to load our face_mask_detection model. The remaining dependencies can be installed directly via pip or pip3.
