@@ -7,8 +7,8 @@ from flask import render_template, Response
 # then uncomment the second import
 # and comment the first one
 
-# from camera.web_cam import VideoCamera
-from camera.pi_cam import VideoCamera
+from camera.web_cam import VideoCamera
+# from camera.pi_cam import VideoCamera
 
 
 @auth.required

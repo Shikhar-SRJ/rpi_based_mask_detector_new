@@ -7,10 +7,12 @@ import numpy as np
 class VideoCamera(object):
     def __init__(self):
         self.cap = cv2.VideoCapture(0)
-        time.sleep(2)
+        time.sleep(1)
 
     def __del__(self):
-        self.cap.release()
+        if self.cap.isOpened():
+            self.cap.release()
+            time.sleep(2)
 
     def get_frame(self):
         _, frame = self.cap.read()
@@ -47,13 +49,13 @@ class VideoCamera(object):
         input_details = model.input_details()
         output_details = model.output_details()
         input_shape = input_details[0]['shape']
-        img_size = 100
+        img_size = 224
 
         label_dict = {0: 'MASK', 1: "NO MASK"}
         color_dict = {0: (0, 255, 0), 1: (0, 0, 255)}
 
         for x, y, w, h in faces:
-            face_img = gray[y:y + h, x:x + w]
+            face_img = frame[y:y + h, x:x + w]
             resized = cv2.resize(face_img, (img_size, img_size))
             normalized = resized / 255.0
             reshaped = np.reshape(normalized, input_shape)
